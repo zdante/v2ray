@@ -1,5 +1,5 @@
 # 说明
-修改了src/download-v2ray.sh
+修改了src/download-v2ray.sh 第3行
 
 将最新v2ray版本写死为 v4.27.0
 

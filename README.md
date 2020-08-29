@@ -33,4 +33,4 @@ chmod +x install.sh
 # 后记
 233的脚本从本地安装时，必须在 install.sh 脚本所在的目录执行
 
-install.sh 的 795 行，检查$(pwd)/config
+install.sh 的 795 行，检查$(pwd)/config目录

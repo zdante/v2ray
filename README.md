@@ -6,13 +6,15 @@
 # 如果你已经跑过233脚本了
 v2ray uninstall
 
-rm -r /etc/v2ray/233boy/v2ray/
+rm -rf /tmp/233boy/v2ray
 
-git clone https://github.com/crazypeace/v2ray -b "master" /etc/v2ray/233boy/v2ray --depth=1
+git clone https://github.com/crazypeace/v2ray -b "master" /tmp/233boy/v2ray --depth=1
 
-chmod +x /etc/v2ray/233boy/v2ray/install.sh
+cd /tmp/233boy/v2ray
 
-/etc/v2ray/233boy/v2ray/install.sh local
+chmod +x install.sh
+
+./install.sh local
 
 
 # 如果还没有跑过233脚本
@@ -20,8 +22,10 @@ apt-get update -y
 
 apt-get install -y lrzsz git zip unzip curl wget qrencode libcap2-bin dbus
 
-git clone https://github.com/crazypeace/v2ray -b "master" /etc/v2ray/233boy/v2ray --depth=1
+git clone https://github.com/crazypeace/v2ray -b "master" /tmp/233boy/v2ray --depth=1
 
-chmod +x /etc/v2ray/233boy/v2ray/install.sh
+cd /tmp/233boy/v2ray
 
-/etc/v2ray/233boy/v2ray/install.sh local
+chmod +x install.sh
+
+./install.sh local

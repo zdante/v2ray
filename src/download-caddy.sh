@@ -7,7 +7,8 @@ _download_caddy_file() {
 	fi
 	# local caddy_download_link="https://caddyserver.com/download/linux/${caddy_arch}?license=personal"
 	local caddy_download_link="https://github.com/caddyserver/caddy/releases/download/v1.0.4/caddy_v1.0.4_linux_${caddy_arch}.tar.gz"
-
+	echo -e " $red指定下载 Caddy v1.0.4!!!$none"
+	
 	mkdir -p $caddy_tmp
 
 	if ! wget --no-check-certificate -O "$caddy_tmp_file" $caddy_download_link; then
